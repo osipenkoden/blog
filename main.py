@@ -31,7 +31,7 @@ def admin_only(f):
         if current_user.id == 1:
             return f(*args,**kwargs)
         else:
-            return "Not Admin"
+            return "Not at all Admin"
     return decorated
 
 
